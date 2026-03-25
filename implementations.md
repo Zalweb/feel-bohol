@@ -68,7 +68,7 @@ These colors represent the natural beauty of Bohol—forests, chocolate hills, a
 
 ### 1. Home Page (`index.html`)
 - **FR-01:** Title "Discover Bohol".
-- **FR-02:** Hero banner image (Placeholder for beach video).
+- **FR-02:** Hero banner image.
 - **FR-03:** Brief tourism overview.
 - **FR-04:** Featured attractions section.
 - **FR-05:** Travel tips preview.
