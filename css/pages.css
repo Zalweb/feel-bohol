@@ -3,12 +3,25 @@
    ============================================================ */
 
 /* Page wrapper */
+/* Page wrapper */
 .page-wrap {
+  position: relative;
   min-height: 100vh;
-  background: #091317;
   color: #fff;
   font-family: "Inter", sans-serif;
   padding-top: 5.5rem; /* clear fixed nav */
+  background: rgba(9, 19, 23, 0.4);
+  z-index: 1;
+}
+
+.page-wrap::before {
+  content: "";
+  position: fixed;
+  inset: -2rem; /* bleed edges so blur doesn't show sharp box */
+  background: url('../images/chocolate-hills-aerial.png') center/cover no-repeat;
+  filter: blur(12px) brightness(0.25);
+  z-index: -1;
+  will-change: transform;
 }
 
 /* Page hero / banner */
@@ -16,7 +29,7 @@
   position: relative;
   overflow: hidden;
   padding: 5rem clamp(1.25rem, 3.5vw, 4.5rem) 4rem;
-  background: linear-gradient(135deg, #0a1c22 0%, #091317 60%, #111f16 100%);
+  background: linear-gradient(135deg, rgba(10, 28, 34, 0.6) 0%, rgba(9, 19, 23, 0.8) 60%, rgba(17, 31, 22, 0.9) 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
