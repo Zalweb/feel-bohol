@@ -23,13 +23,13 @@
         <img src="./images/bohol-logo.png" alt="Bohol logo">
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a class="is-active" href="#">Home</a>
-        <a href="#">Destinations</a>
-        <a href="#">Top Attraction</a>
-        <a href="#">Gallery</a>
-        <a href="#">Explore Map</a>
-        <a href="#">Plan your Trip</a>
-        <a href="#">About Us</a>
+        <a class="is-active" href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="top_attractions.html">Top Attraction</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="explore_map.html">Explore Map</a>
+        <a href="plan_your_trip.html">Plan your Trip</a>
+        <a href="about.html">About Us</a>
       </nav>
     </header>
 
@@ -39,7 +39,7 @@
         <p class="hero__description">
           Where ancient limestone hills meet turquoise rivers and rare wildlife. Discover the island that never stops surprising you.
         </p>
-        <a class="cta-button" href="#">see more</a>
+        <a class="cta-button" href="destinations.html">see more</a>
         <div class="slide-counter">
           <span class="slide-counter__current">01</span>
           <span>&nbsp;/&nbsp;04</span>
@@ -101,8 +101,16 @@
       var slides    = document.querySelectorAll('.carousel-slide');
       var track     = document.getElementById('cardTrack');
       var counterEl = document.querySelector('.slide-counter__current');
+      var descEl    = document.querySelector('.hero__description');
       var btnPrev   = document.querySelector('.control--prev');
       var btnNext   = document.querySelector('.control--next');
+
+      var descriptions = [
+        "Over 1,200 perfectly cone-shaped hills shifting colors with the seasons. A geological wonder found nowhere else.",
+        "A lush, dramatic two-kilometre canopy of dense mahogany trees. The perfect natural tunnel in the heart of Bohol.",
+        "Drift down emerald waters through jungle canopies and ancient bamboo groves on a floating restaurant.",
+        "Home to one of the world's smallest and most endearing primates. Discover the delicate balance of Bohol's wildlife."
+      ];
 
       var current = 0;
       var locked  = false;
@@ -124,6 +132,16 @@
 
       function updateBg(idx) {
         slides[current].classList.remove('is-active');
+        
+        // Quick fade-out/in for text
+        if (descEl) {
+          descEl.style.opacity = '0';
+          setTimeout(function() {
+            descEl.textContent = descriptions[idx];
+            descEl.style.opacity = '1';
+          }, 300); // Wait for fade out
+        }
+
         current = idx;
         slides[current].classList.add('is-active');
         if (counterEl) counterEl.textContent = String(current + 1).padStart(2, '0');

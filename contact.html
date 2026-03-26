@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with the Feel Bohol team — enquiries, partnerships, and travel help.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <link href="./css/pages.css" rel="stylesheet">
+  <title>Contact – Feel Bohol</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Feel Bohol home">
+      <img src="./images/bohol-logo.png" alt="Bohol logo">
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="top_attractions.html">Top Attraction</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="explore_map.html">Explore Map</a>
+      <a href="plan_your_trip.html">Plan your Trip</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <div class="page-wrap">
+    <div class="page-hero">
+      <p class="page-hero__label">Contact</p>
+      <h1 class="page-hero__title">Let's Talk<br>Bohol</h1>
+      <p class="page-hero__sub">Questions, partnerships, photography credits, or just wanting to share your Bohol story — we'd love to hear from you.</p>
+    </div>
+
+    <section class="section">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;">
+
+        <!-- Form -->
+        <div>
+          <span class="section__label">Send a Message</span>
+          <h2 class="section__title">Get in Touch</h2>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="cf-name">Full Name</label>
+              <input id="cf-name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address</label>
+              <input id="cf-email" type="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-topic">Topic</label>
+              <select id="cf-topic">
+                <option value="">Select a topic</option>
+                <option>General Enquiry</option>
+                <option>Travel Planning Help</option>
+                <option>Photography / Media</option>
+                <option>Partnership / Sponsorship</option>
+                <option>Report an Error</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button class="btn-submit" type="submit">Send Message</button>
+            <p id="cf-success" style="display:none; color:#efb500; margin:0; font-size:0.9rem;">Message sent! We'll get back to you soon.</p>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div>
+          <span class="section__label">Contact Info</span>
+          <h2 class="section__title">Find Us</h2>
+          <div style="margin-top:1.5rem; display:flex; flex-direction:column; gap:1.5rem;">
+            <div>
+              <p style="margin:0; color:rgba(255,255,255,0.4); font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.3rem;">Location</p>
+              <p style="margin:0; color:rgba(255,255,255,0.8);">Tagbilaran City, Bohol, Philippines</p>
+            </div>
+            <div>
+              <p style="margin:0; color:rgba(255,255,255,0.4); font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.3rem;">Email</p>
+              <p style="margin:0;"><a href="mailto:hello@feelbohol.ph" style="color:#efb500; text-decoration:none;">hello@feelbohol.ph</a></p>
+            </div>
+            <div>
+              <p style="margin:0; color:rgba(255,255,255,0.4); font-size:0.78rem; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.3rem;">Response Time</p>
+              <p style="margin:0; color:rgba(255,255,255,0.8);">Within 1–2 business days</p>
+            </div>
+          </div>
+
+          <!-- Quick links -->
+          <div style="margin-top:3rem;">
+            <span class="section__label">Quick Links</span>
+            <div style="margin-top:1rem; display:flex; flex-direction:column; gap:0.6rem;">
+              <a href="plan_your_trip.html" style="color:rgba(255,255,255,0.65); text-decoration:none; font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='#efb500'" onmouseout="this.style.color='rgba(255,255,255,0.65)'">Plan Your Trip &rarr;</a>
+              <a href="explore_map.html" style="color:rgba(255,255,255,0.65); text-decoration:none; font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='#efb500'" onmouseout="this.style.color='rgba(255,255,255,0.65)'">Explore the Map &rarr;</a>
+              <a href="gallery.html" style="color:rgba(255,255,255,0.65); text-decoration:none; font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='#efb500'" onmouseout="this.style.color='rgba(255,255,255,0.65)'">Browse Gallery &rarr;</a>
+              <a href="top_attractions.html" style="color:rgba(255,255,255,0.65); text-decoration:none; font-size:0.95rem; transition:color 0.2s;" onmouseover="this.style.color='#efb500'" onmouseout="this.style.color='rgba(255,255,255,0.65)'">Top Attractions &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__brand">Feel Bohol</p>
+      <p class="site-footer__copy">&copy; 2026 Feel Bohol. Promoting the natural beauty and cultural heritage of Bohol, Philippines.</p>
+      <nav class="site-footer__nav">
+        <a href="index.html">Home</a><a href="top_attractions.html">Attractions</a><a href="gallery.html">Gallery</a><a href="plan_your_trip.html">Plan your Trip</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('cf-success').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

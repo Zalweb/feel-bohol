@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive map of Bohol — find beaches, attractions, hidden gems, and restaurants across the island.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <link href="./css/pages.css" rel="stylesheet">
+  <title>Explore Map – Feel Bohol</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Feel Bohol home">
+      <img src="./images/bohol-logo.png" alt="Bohol logo">
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="top_attractions.html">Top Attraction</a>
+      <a href="gallery.html">Gallery</a>
+      <a class="is-active" href="explore_map.html">Explore Map</a>
+      <a href="plan_your_trip.html">Plan your Trip</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <div class="page-wrap">
+    <div class="page-hero">
+      <p class="page-hero__label">Explore Map</p>
+      <h1 class="page-hero__title">Find Your Way<br>Around Bohol</h1>
+      <p class="page-hero__sub">Bohol is divided into 47 municipalities. Browse key areas and plan your route before you arrive.</p>
+    </div>
+
+    <!-- Live map -->
+    <section class="section">
+      <span class="section__label">Interactive Map</span>
+      <h2 class="section__title">Bohol, Philippines</h2>
+      <p class="section__body">Zoom in to explore beaches, mountains, caves, and heritage sites across the island.</p>
+      <div class="map-wrap">
+        <iframe
+          title="Map of Bohol, Philippines"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=123.6,9.4,124.6,10.2&layer=mapnik&marker=9.8,124.05"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Zone guide -->
+    <section class="section section--alt">
+      <span class="section__label">Zones</span>
+      <h2 class="section__title">Key Areas of Bohol</h2>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card__body">
+            <span class="card__tag">City</span>
+            <h3 class="card__title">Tagbilaran City</h3>
+            <p class="card__text">The capital and main entry point. Home to Baclayon Church, the Sandugo Monument, the airport, ferry terminals, and most hotels. Start your island journey here.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <span class="card__tag">Island</span>
+            <h3 class="card__title">Panglao Island</h3>
+            <p class="card__text">Connected to the mainland by bridges, Panglao is Bohol's beach capital. Alona Beach, Dumaluan Beach, Hinagdanan Cave, and Balicasag Island boat trips are all based here.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <span class="card__tag">Interior</span>
+            <h3 class="card__title">Carmen / Batuan / Sagbayan</h3>
+            <p class="card__text">The heart of Bohol's countryside. The Chocolate Hills viewpoint in Carmen is the most popular, but Sagbayan Peak offers a quieter, equally stunning vantage point.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <span class="card__tag">River Town</span>
+            <h3 class="card__title">Loboc &amp; Corella</h3>
+            <p class="card__text">The Loboc River cruise departs from Loboc town. Nearby Corella is home to the Philippine Tarsier Sanctuary. The two stops are natural companions on the countryside loop.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <span class="card__tag">Hidden Gem</span>
+            <h3 class="card__title">Candijay &amp; Anda</h3>
+            <p class="card__text">The east coast offers Bohol's best-kept secrets: Cadapdapan Rice Terraces, Can-umantad Falls (Bohol's tallest), Lamanoc Island's cave art, and pristine Anda Beach.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__body">
+            <span class="card__tag">Night Tour</span>
+            <h3 class="card__title">Abatan River</h3>
+            <p class="card__text">After dark, the Abatan River near Cortes transforms into a magical corridor of wild fireflies. Small bancas glide silently through the mangroves as thousands of lights blink overhead.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting there -->
+    <section class="section">
+      <span class="section__label">Getting There</span>
+      <h2 class="section__title">How to Reach Bohol</h2>
+      <div style="max-width:52rem; margin-top:1.5rem;">
+        <div class="info-row">
+          <button class="info-row__toggle">By Air — Tagbilaran Airport (TAG)</button>
+          <div class="info-row__body">Direct flights from Manila (1h 20m), Cebu (25m), and seasonal routes from Clark and Davao. The airport is a 10-minute drive from the city centre and 30 minutes from Panglao.
+          </div>
+        </div>
+        <div class="info-row">
+          <button class="info-row__toggle">By Sea — Fast Ferry from Cebu</button>
+          <div class="info-row__body">Frequent fast ferries run from Cebu City (Pier 1) to Tagbilaran Port (2 hours) and Tubigon Port (1.5 hours). Operators include OceanJet, SuperCat, and Lite Shipping. Book ahead during peak season.
+          </div>
+        </div>
+        <div class="info-row">
+          <button class="info-row__toggle">Getting Around</button>
+          <div class="info-row__body">
+            <strong>Van Rental (with driver):</strong> ₱4,000–₱4,500 per 8-hour countryside tour — the most convenient option.<br><br>
+            <strong>Self-Drive Van:</strong> ₱3,000–₱4,000 per 24 hours.<br><br>
+            <strong>Scooter:</strong> ₱400–₱600 per day. Ideal for Panglao island-hopping.<br><br>
+            <strong>Tricycle:</strong> Short hops within towns. Negotiate the fare before boarding.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__brand">Feel Bohol</p>
+      <p class="site-footer__copy">&copy; 2026 Feel Bohol. Promoting the natural beauty and cultural heritage of Bohol, Philippines.</p>
+      <nav class="site-footer__nav">
+        <a href="index.html">Home</a><a href="top_attractions.html">Attractions</a><a href="gallery.html">Gallery</a><a href="plan_your_trip.html">Plan your Trip</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.info-row__toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btn.closest('.info-row').classList.toggle('is-open');
+      });
+    });
+  </script>
+</body>
+</html>
