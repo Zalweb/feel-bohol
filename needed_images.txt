@@ -1,0 +1,22 @@
+Hey! Here are the exact filenames needed for the remaining images on the website. 
+Please find suitable images on Google/Unsplash, rename them EXACTLY as shown below, and save them all into the `images/` folder.
+
+NOTE: All images must be in .png format to match the code. If you download a .jpg, please convert it to .png or rename the extension.
+
+REQUIRED IMAGES:
+1.  balicasag-island-diving.png
+2.  balicasag-turtle.png
+3.  hinagdanan-cave.png
+4.  alona-beach-panglao.png
+5.  baclayon-church.png
+6.  cadapdapan-rice-terraces.png
+7.  can-umantad-falls.png
+8.  binabaje-hills.png
+9.  lamanoc-island.png
+10. abatan-river-firefly.png
+11. tarsier-sanctuary.png
+12. virgin-island-bohol.png
+13. sandugo-festival.png
+14. peanut-kisses-bohol.png
+
+Once those are in the `images/` folder, the website gallery and inner pages will automatically display them!

@@ -180,8 +180,9 @@ button {
 
 .hero__controls {
   position: absolute;
-  top: 34%;
-  right: 0;
+  top: auto;
+  bottom: 1.5rem;
+  right: clamp(2rem, 8vw, 8rem);
   z-index: 4;
   display: flex;
   gap: 0.8rem;
