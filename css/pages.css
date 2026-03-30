@@ -24,6 +24,29 @@
   will-change: transform;
 }
 
+.onepage-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  background: rgba(9, 19, 23, 0.4);
+}
+
+.onepage-content::before {
+  content: "";
+  position: fixed;
+  inset: -2rem;
+  background: url('../images/chocolate-hills-aerial.png') center/cover no-repeat;
+  filter: blur(12px) brightness(0.25);
+  z-index: -1;
+  will-change: transform;
+}
+
+.onepage-section {
+  position: relative;
+  scroll-margin-top: 7.5rem;
+}
+
 /* Page hero / banner */
 .page-hero {
   position: relative;
@@ -482,6 +505,70 @@
   line-height: 1.6;
 }
 
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-success {
+  margin: 0;
+  color: #efb500;
+  font-size: 0.9rem;
+}
+
+.contact-meta {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-meta__item p {
+  margin: 0;
+}
+
+.contact-meta__label {
+  margin-bottom: 0.3rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-meta__value {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact-meta__value a {
+  color: #efb500;
+  text-decoration: none;
+}
+
+.contact-quick-links {
+  margin-top: 3rem;
+}
+
+.quick-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.quick-links a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.quick-links a:hover,
+.quick-links a:focus-visible {
+  color: #efb500;
+}
+
 /* Page nav (reuse shared header) */
 /* The fixed .site-header from main.css applies — just include main.css */
 
@@ -489,4 +576,5 @@
   .card-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr 1fr; }
   .section { padding: 3rem 1rem; }
+  .contact-layout { grid-template-columns: 1fr; gap: 2rem; }
 }

@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Feel Bohol is a one-page travel guide to destinations, attractions, maps, trip planning, and local stories from Bohol, Philippines.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="./css/main.css" rel="stylesheet">
+  <link href="./css/pages.css" rel="stylesheet">
   <title>Feel Bohol</title>
 </head>
 <body>
-  <main class="hero">
+  <main id="home" class="hero scroll-section">
     <div class="hero__carousel" aria-hidden="true">
       <div class="carousel-slide is-active" style="background-image: url('./images/chocolate-hills-aerial.png')"></div>
       <div class="carousel-slide" style="background-image: url('./images/manmade-forest-road.png')"></div>
@@ -19,17 +21,17 @@
     </div>
 
     <header class="site-header">
-      <a class="brand" href="#" aria-label="Feel Bohol home">
+      <a class="brand" href="#home" aria-label="Feel Bohol home">
         <img src="./images/bohol-logo.png" alt="Bohol logo">
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
-        <a class="is-active" href="index.html">Home</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="top_attractions.html">Top Attraction</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="explore_map.html">Explore Map</a>
-        <a href="plan_your_trip.html">Plan your Trip</a>
-        <a href="about.html">About Us</a>
+        <a class="is-active" href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#attractions">Top Attraction</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#explore-map">Explore Map</a>
+        <a href="#plan-trip">Plan your Trip</a>
+        <a href="#about">About Us</a>
       </nav>
     </header>
 
@@ -39,7 +41,7 @@
         <p class="hero__description">
           Where ancient limestone hills meet turquoise rivers and rare wildlife. Discover the island that never stops surprising you.
         </p>
-        <a class="cta-button" href="destinations.html">see more</a>
+        <a class="cta-button" href="#destinations">see more</a>
         <div class="slide-counter">
           <span class="slide-counter__current">01</span>
           <span>&nbsp;/&nbsp;04</span>
@@ -76,17 +78,690 @@
     </section>
   </main>
 
+  <div class="onepage-content">
+    <section id="destinations" class="onepage-section scroll-section" aria-labelledby="destinations-title">
+      <div class="page-hero">
+        <p class="page-hero__label">Destinations</p>
+        <h2 id="destinations-title" class="page-hero__title">Every Corner<br>of Bohol</h2>
+        <p class="page-hero__sub">From the iconic to the undiscovered, these are the places that define the island province.</p>
+      </div>
+
+      <section class="section">
+        <span class="section__label">Iconic</span>
+        <h3 class="section__title">The Icons of Bohol</h3>
+        <div class="card-grid">
+          <div class="card">
+            <img class="card__img" src="./images/chocolate-hills-aerial.png" alt="Chocolate Hills">
+            <div class="card__body">
+              <span class="card__tag">Nature</span>
+              <h4 class="card__title">Chocolate Hills</h4>
+              <p class="card__text">1,268 symmetrical hills across three municipalities. Brown in dry season, green in wet season, and the best-known symbol of Bohol.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/alona-beach-panglao.png" alt="Panglao Island">
+            <div class="card__body">
+              <span class="card__tag">Beach</span>
+              <h4 class="card__title">Panglao Island</h4>
+              <p class="card__text">Alona Beach, Dumaluan Beach, dive shops, and Balicasag boat trips make Panglao the island's beach capital.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/loboc-river-cruise.png" alt="Loboc River">
+            <div class="card__body">
+              <span class="card__tag">Experience</span>
+              <h4 class="card__title">Loboc River</h4>
+              <p class="card__text">A lush river route through forest and villages, best experienced on a floating restaurant cruise.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">Hidden Gems</span>
+        <h3 class="section__title">Off the Beaten Path</h3>
+        <div class="card-grid">
+          <div class="card">
+            <img class="card__img" src="./images/cadapdapan-rice-terraces.png" alt="Cadapdapan Rice Terraces">
+            <div class="card__body">
+              <span class="card__tag">Scenery</span>
+              <h4 class="card__title">Cadapdapan Rice Terraces</h4>
+              <p class="card__text">Candijay's peaceful terraces offer broad green layers of rice fields framed by mountain views.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/can-umantad-falls.png" alt="Can-umantad Falls">
+            <div class="card__body">
+              <span class="card__tag">Waterfall</span>
+              <h4 class="card__title">Can-umantad Falls</h4>
+              <p class="card__text">Bohol's tallest waterfall with a wide emerald pool and a forest approach that feels part of the adventure.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/binabaje-hills.png" alt="Binabaje Hills">
+            <div class="card__body">
+              <span class="card__tag">Hiking</span>
+              <h4 class="card__title">Binabaje Hills, Alicia</h4>
+              <p class="card__text">Nicknamed Little Switzerland, this ridgeline hike rewards you with sweeping views over rolling hills.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/lamanoc-island.png" alt="Lamanoc Island">
+            <div class="card__body">
+              <span class="card__tag">Heritage</span>
+              <h4 class="card__title">Lamanoc Island, Anda</h4>
+              <p class="card__text">A mysterious island site with caves, folklore, and traces of pre-colonial heritage.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/abatan-river-firefly.png" alt="Abatan River Firefly Tour">
+            <div class="card__body">
+              <span class="card__tag">Night Tour</span>
+              <h4 class="card__title">Abatan River Firefly Tour</h4>
+              <p class="card__text">A quiet night cruise through mangroves where fireflies flicker like a floating galaxy.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/virgin-island-bohol.png" alt="Virgin Island">
+            <div class="card__body">
+              <span class="card__tag">Island</span>
+              <h4 class="card__title">Virgin Island, Panglao</h4>
+              <p class="card__text">A bright white sandbar ringed by shallow turquoise water and perfect for a short boat trip.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="section__label">Events</span>
+        <h3 class="section__title">Bohol's Festival Calendar</h3>
+        <div class="timeline" style="max-width:48rem; margin-top:1.5rem;">
+          <div class="timeline-item">
+            <span class="timeline-item__month">January</span>
+            <h4 class="timeline-item__title">Ubi Festival</h4>
+            <p class="timeline-item__text">A celebration of Bohol's prized ube kinampay with food fairs, cooking contests, and local farm showcases.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__month">May</span>
+            <h4 class="timeline-item__title">Fiesta Month</h4>
+            <p class="timeline-item__text">Town fiestas bring processions, music, shared meals, and open-house celebrations across many municipalities.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__month">July</span>
+            <h4 class="timeline-item__title">Sandugo Festival</h4>
+            <p class="timeline-item__text">The province's headline festival with street dancing, cultural shows, and a reenactment of the historic blood compact.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__month">August</span>
+            <h4 class="timeline-item__title">Panagat sa Dauis</h4>
+            <p class="timeline-item__text">A fishing festival centered on coastal life, seafood, and community traditions in Dauis.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="attractions" class="onepage-section scroll-section" aria-labelledby="attractions-title">
+      <div class="page-hero">
+        <p class="page-hero__label">Top Attractions</p>
+        <h2 id="attractions-title" class="page-hero__title">Bohol's Finest</h2>
+        <p class="page-hero__sub">From famous hills to marine sanctuaries and heritage landmarks, these are Bohol's must-see experiences.</p>
+      </div>
+
+      <section class="section">
+        <span class="section__label">Landmarks</span>
+        <h3 class="section__title">Major Attractions</h3>
+        <div class="card-grid">
+          <div class="card">
+            <img class="card__img" src="./images/chocolate-hills-aerial.png" alt="Chocolate Hills aerial view">
+            <div class="card__body">
+              <span class="card__tag">Nature</span>
+              <h4 class="card__title">Chocolate Hills</h4>
+              <p class="card__text">More than 1,200 cone-shaped limestone hills spread across the island interior and change tone with the seasons.</p>
+              <span class="card__fee">PHP 100 - PHP 150 entrance</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/tarsier-close-up.png" alt="Philippine tarsier close-up">
+            <div class="card__body">
+              <span class="card__tag">Wildlife</span>
+              <h4 class="card__title">Philippine Tarsier Sanctuary</h4>
+              <p class="card__text">A quieter, more ethical place to encounter one of the world's smallest primates in a protected setting.</p>
+              <span class="card__fee">PHP 150 - PHP 170 entrance</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/loboc-river-cruise.png" alt="Loboc River cruise">
+            <div class="card__body">
+              <span class="card__tag">Experience</span>
+              <h4 class="card__title">Loboc River Cruise</h4>
+              <p class="card__text">A scenic river buffet with cultural performances and a relaxing route under thick green canopies.</p>
+              <span class="card__fee">PHP 850 - PHP 1,000 with buffet</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/manmade-forest-road.png" alt="Bilar Manmade Forest road">
+            <div class="card__body">
+              <span class="card__tag">Nature</span>
+              <h4 class="card__title">Bilar Manmade Forest</h4>
+              <p class="card__text">A dramatic tunnel of mahogany trees that provides one of the island's most recognizable road scenes.</p>
+              <span class="card__fee">Free</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/hinagdanan-cave.png" alt="Hinagdanan Cave">
+            <div class="card__body">
+              <span class="card__tag">Adventure</span>
+              <h4 class="card__title">Hinagdanan Cave</h4>
+              <p class="card__text">A naturally lit limestone cave with still water, rock formations, and a cool swimming spot inside.</p>
+              <span class="card__fee">PHP 75 entrance / PHP 150 with swim</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/balicasag-island-diving.png" alt="Balicasag Island diving">
+            <div class="card__body">
+              <span class="card__tag">Diving</span>
+              <h4 class="card__title">Balicasag Island</h4>
+              <p class="card__text">A marine sanctuary known for reef walls, clear water, and frequent sea turtle encounters.</p>
+              <span class="card__fee">PHP 250 environmental fee plus boat fare</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/alona-beach-panglao.png" alt="Alona Beach">
+            <div class="card__body">
+              <span class="card__tag">Beach</span>
+              <h4 class="card__title">Alona Beach, Panglao</h4>
+              <p class="card__text">A lively beach strip lined with resorts, restaurants, dive shops, and sunset views.</p>
+              <span class="card__fee">Free beach access</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/baclayon-church.png" alt="Baclayon Church">
+            <div class="card__body">
+              <span class="card__tag">Heritage</span>
+              <h4 class="card__title">Baclayon Church</h4>
+              <p class="card__text">One of the oldest stone churches in the Philippines and a major marker of Bohol's colonial heritage.</p>
+              <span class="card__fee">PHP 50 - PHP 150 museum fee</span>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__img" src="./images/cadapdapan-rice-terraces.png" alt="Cadapdapan Rice Terraces">
+            <div class="card__body">
+              <span class="card__tag">Hidden Gem</span>
+              <h4 class="card__title">Cadapdapan Rice Terraces</h4>
+              <p class="card__text">A calmer, greener countryside stop with broad layered fields and very few crowds.</p>
+              <span class="card__fee">Free</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="gallery" class="onepage-section scroll-section" aria-labelledby="gallery-title">
+      <div class="page-hero">
+        <p class="page-hero__label">Gallery</p>
+        <h2 id="gallery-title" class="page-hero__title">Bohol in Every Frame</h2>
+        <p class="page-hero__sub">A visual walk through landscapes, wildlife, beaches, and heritage spots across the island.</p>
+      </div>
+
+      <section class="section">
+        <span class="section__label">Landscapes</span>
+        <h3 class="section__title">Nature &amp; Scenery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./images/chocolate-hills-aerial.png" alt="Chocolate Hills aerial view">
+            <span class="gallery-item__caption">Chocolate Hills, Carmen</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/manmade-forest-road.png" alt="Bilar Manmade Forest">
+            <span class="gallery-item__caption">Bilar Manmade Forest</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/loboc-river-cruise.png" alt="Loboc River">
+            <span class="gallery-item__caption">Loboc River Cruise</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/cadapdapan-rice-terraces.png" alt="Cadapdapan Rice Terraces">
+            <span class="gallery-item__caption">Cadapdapan Rice Terraces</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/can-umantad-falls.png" alt="Can-umantad Falls">
+            <span class="gallery-item__caption">Can-umantad Falls, Candijay</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/binabaje-hills.png" alt="Binabaje Hills">
+            <span class="gallery-item__caption">Binabaje Hills, Alicia</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">Wildlife</span>
+        <h3 class="section__title">Flora &amp; Fauna</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./images/tarsier-close-up.png" alt="Philippine tarsier">
+            <span class="gallery-item__caption">Philippine Tarsier</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/tarsier-sanctuary.png" alt="Tarsier Sanctuary">
+            <span class="gallery-item__caption">Tarsier Sanctuary, Corella</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/balicasag-turtle.png" alt="Sea turtle at Balicasag">
+            <span class="gallery-item__caption">Sea Turtle, Balicasag Island</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/abatan-river-firefly.png" alt="Abatan River firefly watching">
+            <span class="gallery-item__caption">Abatan River Firefly Watching</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="section__label">Sea &amp; Beach</span>
+        <h3 class="section__title">Islands &amp; Shores</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./images/alona-beach-panglao.png" alt="Alona Beach">
+            <span class="gallery-item__caption">Alona Beach, Panglao</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/balicasag-island-diving.png" alt="Balicasag Island diving">
+            <span class="gallery-item__caption">Balicasag Island Diving</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/virgin-island-bohol.png" alt="Virgin Island">
+            <span class="gallery-item__caption">Virgin Island, Panglao</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/lamanoc-island.png" alt="Lamanoc Island">
+            <span class="gallery-item__caption">Lamanoc Island, Anda</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">Culture &amp; Heritage</span>
+        <h3 class="section__title">History Alive</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="./images/baclayon-church.png" alt="Baclayon Church">
+            <span class="gallery-item__caption">Baclayon Church</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/hinagdanan-cave.png" alt="Hinagdanan Cave">
+            <span class="gallery-item__caption">Hinagdanan Cave, Panglao</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/sandugo-festival.png" alt="Sandugo Festival">
+            <span class="gallery-item__caption">Sandugo Festival, Tagbilaran</span>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/peanut-kisses-bohol.png" alt="Peanut Kisses">
+            <span class="gallery-item__caption">Peanut Kisses, a local delicacy</span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="explore-map" class="onepage-section scroll-section" aria-labelledby="map-title">
+      <div class="page-hero">
+        <p class="page-hero__label">Explore Map</p>
+        <h2 id="map-title" class="page-hero__title">Find Your Way<br>Around Bohol</h2>
+        <p class="page-hero__sub">Use the map, area guide, and transport notes to build your route before you arrive.</p>
+      </div>
+
+      <section class="section">
+        <span class="section__label">Interactive Map</span>
+        <h3 class="section__title">Bohol, Philippines</h3>
+        <p class="section__body">Zoom in to explore beaches, mountains, caves, churches, and countryside stops across the island.</p>
+        <div class="map-wrap">
+          <iframe
+            title="Map of Bohol, Philippines"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=123.6,9.4,124.6,10.2&amp;layer=mapnik&amp;marker=9.8,124.05"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">Zones</span>
+        <h3 class="section__title">Key Areas of Bohol</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">City</span>
+              <h4 class="card__title">Tagbilaran City</h4>
+              <p class="card__text">The main gateway for arrivals, ferry connections, heritage sites, and many city hotels.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Island</span>
+              <h4 class="card__title">Panglao Island</h4>
+              <p class="card__text">Bohol's beach base, with resorts, island-hopping tours, Hinagdanan Cave, and dive activity.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Interior</span>
+              <h4 class="card__title">Carmen / Batuan / Sagbayan</h4>
+              <p class="card__text">The island interior where you find the Chocolate Hills and scenic countryside drives.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">River Town</span>
+              <h4 class="card__title">Loboc &amp; Corella</h4>
+              <p class="card__text">A natural pair for the countryside route, combining the river cruise and tarsier sanctuary.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Hidden Gem</span>
+              <h4 class="card__title">Candijay &amp; Anda</h4>
+              <p class="card__text">Known for terraces, waterfalls, cave heritage sites, and quieter beach experiences.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Night Tour</span>
+              <h4 class="card__title">Abatan River</h4>
+              <p class="card__text">A mangrove river route best visited after dark when the fireflies begin to glow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="section__label">Getting There</span>
+        <h3 class="section__title">How to Reach Bohol</h3>
+        <div style="max-width:52rem; margin-top:1.5rem;">
+          <div class="info-row">
+            <button class="info-row__toggle" type="button">By Air - Tagbilaran Airport (TAG)</button>
+            <div class="info-row__body">Direct flights commonly connect Bohol with Manila, Cebu, and selected domestic hubs depending on the season.</div>
+          </div>
+          <div class="info-row">
+            <button class="info-row__toggle" type="button">By Sea - Fast Ferry from Cebu</button>
+            <div class="info-row__body">Fast ferries link Cebu City to Tagbilaran and Tubigon, making Bohol an easy side trip from Cebu.</div>
+          </div>
+          <div class="info-row">
+            <button class="info-row__toggle" type="button">Getting Around</button>
+            <div class="info-row__body">
+              <strong>Van with driver:</strong> convenient for countryside loops and group day trips.<br><br>
+              <strong>Self-drive van:</strong> best for flexible multi-stop routes.<br><br>
+              <strong>Scooter:</strong> popular around Panglao for short scenic rides.<br><br>
+              <strong>Tricycle:</strong> useful for short local transfers within town centers.
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="plan-trip" class="onepage-section scroll-section" aria-labelledby="plan-title">
+      <div class="page-hero">
+        <p class="page-hero__label">Trip Planning</p>
+        <h2 id="plan-title" class="page-hero__title">Plan Your<br>Bohol Adventure</h2>
+        <p class="page-hero__sub">From seasons and budgets to itineraries and packing tips, this section pulls the planning basics into one place.</p>
+      </div>
+
+      <section class="section">
+        <span class="section__label">When to Visit</span>
+        <h3 class="section__title">Best Season</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Peak Season</span>
+              <h4 class="card__title">December - May</h4>
+              <p class="card__text">Dry weather, calmer seas, and ideal beach or diving conditions. This is also when the hills take on their chocolate-brown color.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Value Season</span>
+              <h4 class="card__title">June - November</h4>
+              <p class="card__text">Greener landscapes, fewer crowds, and lower room rates. Outdoor plans still work well between rain showers.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Festival</span>
+              <h4 class="card__title">July - Sandugo Festival</h4>
+              <p class="card__text">A lively season for cultural events, performances, and city celebrations in Tagbilaran.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">Itinerary</span>
+        <h3 class="section__title">Sample 3-Day Countryside + Beach Route</h3>
+        <div style="max-width:52rem; margin-top:1.5rem;">
+          <div class="info-row">
+            <button class="info-row__toggle" type="button">Day 1 - Arrival &amp; Tagbilaran</button>
+            <div class="info-row__body">Arrive in Bohol, check in, and spend your first afternoon around Tagbilaran. Visit Baclayon Church and the Blood Compact Shrine, then try local delicacies in the city.</div>
+          </div>
+          <div class="info-row">
+            <button class="info-row__toggle" type="button">Day 2 - Countryside Loop</button>
+            <div class="info-row__body">Start with Bilar Manmade Forest and the tarsier sanctuary in Corella. Continue to Loboc River for lunch, then end the day at the Chocolate Hills viewpoint.</div>
+          </div>
+          <div class="info-row">
+            <button class="info-row__toggle" type="button">Day 3 - Panglao Island</button>
+            <div class="info-row__body">Spend the day around Panglao with island-hopping, snorkeling, Hinagdanan Cave, or a slower beach afternoon at Alona.</div>
+          </div>
+          <div class="info-row">
+            <button class="info-row__toggle" type="button">Extended Trip - Days 4 to 7</button>
+            <div class="info-row__body">Add Abatan River fireflies, Candijay's terraces and falls, an Alicia ridgeline hike, or an Anda escape if you want a longer stay.</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <span class="section__label">Budget</span>
+        <h3 class="section__title">Estimated Daily Costs</h3>
+        <table class="expense-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Budget Range</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Accommodation</td><td>PHP 500 - PHP 5,000+</td><td>Hostel bed to mid-range resort</td></tr>
+            <tr><td>Van with driver</td><td>PHP 4,000 - PHP 4,500</td><td>Good for a shared countryside day trip</td></tr>
+            <tr><td>Scooter rental</td><td>PHP 400 - PHP 600</td><td>Common around Panglao</td></tr>
+            <tr><td>Loboc River Cruise</td><td>PHP 850 - PHP 1,000</td><td>Often includes buffet lunch</td></tr>
+            <tr><td>Balicasag boat trip</td><td>PHP 800 - PHP 1,200</td><td>Varies by operator and gear</td></tr>
+            <tr><td>Chocolate Hills entrance</td><td>PHP 100 - PHP 150</td><td>Per person</td></tr>
+            <tr><td>Tarsier Sanctuary</td><td>PHP 150 - PHP 170</td><td>Per person</td></tr>
+            <tr><td>Meals</td><td>PHP 150 - PHP 600</td><td>Local eatery to sit-down dining</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">What to Bring</span>
+        <h3 class="section__title">Packing Tips</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Essential</span>
+              <h4 class="card__title">Sun &amp; Sea</h4>
+              <p class="card__text">Bring sunscreen, a rash guard, a dry bag, and gear for boat or beach days.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Practical</span>
+              <h4 class="card__title">Cash First</h4>
+              <p class="card__text">Some smaller establishments outside the main tourist zones still prefer cash over cards.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Respect</span>
+              <h4 class="card__title">Wildlife Etiquette</h4>
+              <p class="card__text">Keep noise low around tarsiers and avoid touching wildlife or coral during marine activities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="about" class="onepage-section scroll-section" aria-labelledby="about-title">
+      <div class="page-hero">
+        <p class="page-hero__label">About Bohol</p>
+        <h2 id="about-title" class="page-hero__title">The Island That<br>History Built</h2>
+        <p class="page-hero__sub">Bohol blends natural wonder with a deep historical identity shaped by resistance, ritual, and heritage.</p>
+      </div>
+
+      <section class="section">
+        <div class="stats-strip">
+          <div class="stat"><span class="stat__value">1,200+</span><span class="stat__label">Chocolate Hills</span></div>
+          <div class="stat"><span class="stat__value">85 yrs</span><span class="stat__label">Dagohoy Rebellion</span></div>
+          <div class="stat"><span class="stat__value">1565</span><span class="stat__label">Year of the Sandugo</span></div>
+          <div class="stat"><span class="stat__value">4,821 km2</span><span class="stat__label">Land Area</span></div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">History</span>
+        <h3 class="section__title">The Sandugo</h3>
+        <p class="section__body">In 1565, Datu Sikatuna and Miguel Lopez de Legazpi sealed a pact of friendship in what is now Tagbilaran. That ritual, remembered as the Sandugo, remains one of Bohol's strongest historical symbols.</p>
+        <br>
+        <p class="section__body">Every July, the Sandugo Festival brings that memory into the present through street dancing, cultural performances, and public celebrations across the city.</p>
+      </section>
+
+      <section class="section">
+        <span class="section__label">Heritage</span>
+        <h3 class="section__title">Francisco Dagohoy</h3>
+        <p class="section__body">Francisco Dagohoy led the longest rebellion in Philippine history, beginning in 1744 and lasting for 85 years. His resistance became a lasting symbol of Boholano courage and independence.</p>
+        <br>
+        <p class="section__body">The story still shapes how Bohol understands itself: resilient, proud, and deeply attached to local identity.</p>
+      </section>
+
+      <section class="section section--alt">
+        <span class="section__label">Architecture</span>
+        <h3 class="section__title">Baclayon Church</h3>
+        <p class="section__body">Founded in 1596, Baclayon Church is one of the oldest stone churches in the country and one of Bohol's most important heritage sites.</p>
+        <br>
+        <p class="section__body">Restored after the 2013 earthquake, it remains a strong reminder that Bohol's story is not only natural beauty but also preservation and recovery.</p>
+      </section>
+
+      <section class="section">
+        <span class="section__label">Why Visit?</span>
+        <h3 class="section__title">Why Bohol Feels Different</h3>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Nature</span>
+              <h4 class="card__title">Geological Wonders</h4>
+              <p class="card__text">Cone-shaped hills, cave lagoons, river routes, and wildlife sanctuaries all live within one compact island.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Sea</span>
+              <h4 class="card__title">Marine Life</h4>
+              <p class="card__text">Snorkeling and diving around Panglao and Balicasag make the coast as memorable as the interior.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__body">
+              <span class="card__tag">Culture</span>
+              <h4 class="card__title">Living History</h4>
+              <p class="card__text">Festivals, churches, and community traditions give the island a strong sense of place beyond the tourist route.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="contact" class="onepage-section scroll-section" aria-labelledby="contact-title">
+      <div class="page-hero">
+        <p class="page-hero__label">Contact</p>
+        <h2 id="contact-title" class="page-hero__title">Let's Talk<br>Bohol</h2>
+        <p class="page-hero__sub">Questions, partnerships, or travel planning help? Send a message and use the quick links to jump around the guide.</p>
+      </div>
+
+      <section class="section">
+        <div class="contact-layout">
+          <div>
+            <span class="section__label">Send a Message</span>
+            <h3 class="section__title">Get in Touch</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="cf-name">Full Name</label>
+                <input id="cf-name" type="text" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email Address</label>
+                <input id="cf-email" type="email" placeholder="you@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="cf-topic">Topic</label>
+                <select id="cf-topic">
+                  <option value="">Select a topic</option>
+                  <option>General Enquiry</option>
+                  <option>Travel Planning Help</option>
+                  <option>Photography / Media</option>
+                  <option>Partnership / Sponsorship</option>
+                  <option>Report an Error</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cf-msg">Message</label>
+                <textarea id="cf-msg" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button class="btn-submit" type="submit">Send Message</button>
+              <p id="cf-success" class="contact-success" hidden>Message sent! We'll get back to you soon.</p>
+            </form>
+          </div>
+          <div>
+            <span class="section__label">Contact Info</span>
+            <h3 class="section__title">Find Us</h3>
+            <div class="contact-meta">
+              <div class="contact-meta__item">
+                <p class="contact-meta__label">Location</p>
+                <p class="contact-meta__value">Tagbilaran City, Bohol, Philippines</p>
+              </div>
+              <div class="contact-meta__item">
+                <p class="contact-meta__label">Email</p>
+                <p class="contact-meta__value"><a href="mailto:hello@feelbohol.ph">hello@feelbohol.ph</a></p>
+              </div>
+              <div class="contact-meta__item">
+                <p class="contact-meta__label">Response Time</p>
+                <p class="contact-meta__value">Within 1-2 business days</p>
+              </div>
+            </div>
+            <div class="contact-quick-links">
+              <span class="section__label">Quick Links</span>
+              <div class="quick-links">
+                <a href="#plan-trip">Plan Your Trip &rarr;</a>
+                <a href="#explore-map">Explore the Map &rarr;</a>
+                <a href="#gallery">Browse Gallery &rarr;</a>
+                <a href="#attractions">Top Attractions &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </div>
+
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p class="site-footer__brand">Feel Bohol</p>
       <p class="site-footer__copy">&copy; 2026 Feel Bohol. Promoting the natural beauty and cultural heritage of Bohol, Philippines.</p>
       <nav class="site-footer__nav" aria-label="Footer navigation">
-        <a href="#">Home</a>
-        <a href="#">Destinations</a>
-        <a href="#">Gallery</a>
-        <a href="#">Plan your Trip</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#plan-trip">Plan your Trip</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </footer>
@@ -187,6 +862,51 @@
       highlightFirst();
       updateBg(0);
       startAuto();
+    })();
+
+    document.querySelectorAll('.info-row__toggle').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btn.closest('.info-row').classList.toggle('is-open');
+      });
+    });
+
+    (function () {
+      var form = document.getElementById('contactForm');
+      var success = document.getElementById('cf-success');
+
+      if (!form || !success) return;
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        success.hidden = false;
+        form.reset();
+      });
+    })();
+
+    (function () {
+      var navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
+      var sections = document.querySelectorAll('.scroll-section');
+
+      if (!navLinks.length || !sections.length || !('IntersectionObserver' in window)) return;
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+
+          var currentHref = '#' + entry.target.id;
+
+          navLinks.forEach(function (link) {
+            link.classList.toggle('is-active', link.getAttribute('href') === currentHref);
+          });
+        });
+      }, {
+        rootMargin: '-38% 0px -45% 0px',
+        threshold: 0.1
+      });
+
+      sections.forEach(function (section) {
+        observer.observe(section);
+      });
     })();
   </script>
 </body>

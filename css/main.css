@@ -18,6 +18,10 @@ body {
   background: #091317;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #fff;
 }
@@ -176,6 +180,7 @@ button {
 .hero__visuals {
   position: relative;
   min-height: min(50rem, 74vh);
+  margin-top: 70px;
 }
 
 .hero__controls {
@@ -224,7 +229,7 @@ button {
   position: absolute;
   right: 0;
   bottom: 2rem;
-  width: min(800px, 85vw);
+  width: min(600px, 85vw);
   overflow: hidden;
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -320,10 +325,7 @@ button {
   gap: clamp(1.25rem, 3vw, 3.5rem);
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background: rgba(5, 15, 18, 0.28);
-  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* --- Responsive --- */
